@@ -5,8 +5,7 @@ namespace GuessNum
     class Program
     {
         static void Main(string[] args)
-        {
-           
+        {  
             numberGame();
             binSearchNumberGame();
             Console.ReadLine();
@@ -16,9 +15,7 @@ namespace GuessNum
         /// </summary>
         private static void binSearchNumberGame()
         {
-            
-
-           
+                     
         }
         /// <summary>
         /// Best case will solve in one guess
@@ -29,7 +26,6 @@ namespace GuessNum
             
             Random rnd = new Random();
             int randNum = rnd.Next(1, 50);
-
             bool flag = true;
             do
             {
@@ -37,11 +33,9 @@ namespace GuessNum
                 {
                     Console.WriteLine("Guess the number between 0 and 50");
                     int guess = Convert.ToInt32(Console.ReadLine());
-
                     if (guess == randNum)
                     {
                         Console.WriteLine("You guessed the right number");
-
                     }
                     else if (guess < randNum)
                     {
